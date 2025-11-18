@@ -18,7 +18,7 @@
         hold_for_caps: hold_for_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_FOR_CAPS";
-            bindings = <&caps_kp>, <&kp>;
+            bindings = <&caps_kp_Q>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <500>;
@@ -26,12 +26,36 @@
             flavor = "tap-preferred";
         };
 
-        caps_kp: caps_kp {
+        caps_kp_A: caps_kp_A {
             compatible = "zmk,behavior-caps-word";
-            label = "CAPS_KP";
+            label = "CAPS_KP_A";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+            continue-list = <A>;
+        };
+
+        caps_kp_B: caps_kp_B {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_KP_B";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            continue-list = <B>;
+        };
+
+        caps_kp_C: caps_kp_C {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_KP_C";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            continue-list = <C>;
+        };
+
+        caps_kp_Q: caps_kp_Q {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_KP_Q";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            continue-list = <Q>;
         };
     };
 
