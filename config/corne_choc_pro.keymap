@@ -52,9 +52,9 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-  &mt Q LS(Q)  &mt W LS(W)  &mt E LS(E)  &mt R LS(R)  &mt T LS(T)  &kp C_MUTE  &kp C_PP  &mt Y LS(Y)  &mt U LS(U)    &mt I LS(I)          &mt O LS(O)            &mt P LS(P)
-  &mt A LS(A)  &mt S LS(S)  &mt D LS(D)  &mt F LS(F)  &mt G LS(G)  &kp LALT    &kp RALT  &mt H LS(H)  &mt J LS(J)    &mt K LS(K)          &mt L LS(L)            &mt SEMICOLON LS(SEMICOLON)
-  &mt Z LS(Z)  &mt X LS(X)  &mt C LS(C)  &mt V LS(V)  &mt B LS(B)                        &mt N LS(N)  &mt M LS(M)    &mt COMMA LS(COMMA)  &mt PERIOD LS(PERIOD)  &mt SLASH LS(SLASH)
+  &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R  &mt LS(T) T  &kp C_MUTE  &kp C_PP  &mt LS(Y) Y  &mt LS(U) U    &mt LS(I) I          &mt LS(O) O            &mt LS(P) P
+  &mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F  &mt LS(G) G  &kp LALT    &kp RALT  &mt LS(H) H  &mt LS(J) J    &mt LS(K) K          &mt LS(L) L            &mt LS(SEMICOLON) SEMICOLON
+  &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(V) V  &mt LS(B) B                        &mt LS(N) N  &mt LS(M) M    &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt LS(SLASH) SLASH
                             &kp LGUI     &to 1        &kp SPACE                          &kp RET      &kp BACKSPACE  &kp RALT
             >;
 
