@@ -47,10 +47,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-  &hold_for_caps 0 Q  &hold_for_caps 0 W  &hold_for_caps 0 E  &hold_for_caps 0 R  &hold_for_caps 0 T  &kp C_MUTE  &kp C_PP  &hold_for_caps 0 Y  &hold_for_caps 0 U  &hold_for_caps 0 I      &hold_for_caps 0 O       &hold_for_caps 0 P
-  &hold_for_caps 0 A  &hold_for_caps 0 S  &hold_for_caps 0 D  &hold_for_caps 0 F  &hold_for_caps 0 G  &kp LALT    &kp RALT  &hold_for_caps 0 H  &hold_for_caps 0 J  &hold_for_caps 0 K      &hold_for_caps 0 L       &hold_for_caps 0 SEMICOLON
-  &hold_for_caps 0 Z  &hold_for_caps 0 X  &hold_for_caps 0 C  &hold_for_caps 0 V  &hold_for_caps 0 B                        &hold_for_caps 0 N  &hold_for_caps 0 M  &hold_for_caps 0 COMMA  &hold_for_caps 0 PERIOD  &hold_for_caps 0 SLASH
-                                          &kp LGUI            &to 1               &kp SPACE                                 &kp RET             &kp BACKSPACE       &kp RALT
+  &mt Q LS(Q)  &mt W LS(W)  &mt E LS(E)  &mt R LS(R)  &mt T LS(T)  &kp C_MUTE  &kp C_PP  &mt Y LS(Y)  &mt U LS(U)    &mt I LS(I)          &mt O LS(O)            &mt P LS(P)
+  &mt A LS(A)  &mt S LS(S)  &mt D LS(D)  &mt F LS(F)  &mt G LS(G)  &kp LALT    &kp RALT  &mt H LS(H)  &mt J LS(J)    &mt K LS(K)          &mt L LS(L)            &mt SEMICOLON LS(SEMICOLON)
+  &mt Z LS(Z)  &mt X LS(X)  &mt C LS(C)  &mt V LS(V)  &mt B LS(B)                        &mt N LS(N)  &mt M LS(M)    &mt COMMA LS(COMMA)  &mt PERIOD LS(PERIOD)  &mt SLASH LS(SLASH)
+                            &kp LGUI     &to 1        &kp SPACE                          &kp RET      &kp BACKSPACE  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
