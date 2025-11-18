@@ -18,44 +18,12 @@
         hold_for_caps: hold_for_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_FOR_CAPS";
-            bindings = <&caps_kp_Q>, <&kp>;
+            bindings = <&caps_word>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <500>;
             hold-trigger-key-positions = <0 1 2 3 4 13 14 15 16 25 26 27 28 12 24 7 8 9 10 11 19 20 21 22 23 29 30 31 32 33>;
             flavor = "tap-preferred";
-        };
-
-        caps_kp_A: caps_kp_A {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_KP_A";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            continue-list = <A>;
-        };
-
-        caps_kp_B: caps_kp_B {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_KP_B";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            continue-list = <B>;
-        };
-
-        caps_kp_C: caps_kp_C {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_KP_C";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            continue-list = <C>;
-        };
-
-        caps_kp_Q: caps_kp_Q {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_KP_Q";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            continue-list = <Q>;
         };
     };
 
@@ -72,10 +40,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-  &hold_for_caps 0 Q  &kp W  &kp E     &kp R  &kp T      &kp C_MUTE  &kp C_PP  &kp Y    &kp U          &kp I      &kp O    &kp P
-  &kp A               &kp S  &kp D     &kp F  &kp G      &kp LALT    &kp RALT  &kp H    &kp J          &kp K      &kp L    &kp SEMI
-  &kp Z               &kp X  &kp C     &kp V  &kp B                            &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH
-                             &kp LGUI  &to 1  &kp SPACE                        &kp RET  &kp BACKSPACE  &kp RALT
+  &hold_for_caps 0 Q  &hold_for_caps 0 W  &hold_for_caps 0 E  &hold_for_caps 0 R  &hold_for_caps 0 T  &kp C_MUTE  &kp C_PP  &hold_for_caps 0 Y  &hold_for_caps 0 U  &hold_for_caps 0 I      &hold_for_caps 0 O       &hold_for_caps 0 P
+  &hold_for_caps 0 A  &hold_for_caps 0 S  &hold_for_caps 0 D  &hold_for_caps 0 F  &hold_for_caps 0 G  &kp LALT    &kp RALT  &hold_for_caps 0 H  &hold_for_caps 0 J  &hold_for_caps 0 K      &hold_for_caps 0 L       &hold_for_caps 0 SEMICOLON
+  &hold_for_caps 0 Z  &hold_for_caps 0 X  &hold_for_caps 0 C  &hold_for_caps 0 V  &hold_for_caps 0 B                        &hold_for_caps 0 N  &hold_for_caps 0 M  &hold_for_caps 0 COMMA  &hold_for_caps 0 PERIOD  &hold_for_caps 0 SLASH
+                                          &kp LGUI            &to 1               &kp SPACE                                 &kp RET             &kp BACKSPACE       &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
